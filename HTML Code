@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tricyclo - Media</title>
+    <link rel="stylesheet" href="asset/css/style.css">
+</head>
+ <style>
+     body{ 
+         background-color: #FDA117;
+
+
+     }
+ </style>
+<body>
+    <div class="container">
+        <nav>
+            <div class="nav-toggle">
+             <img width= "40px" src="asset/nav-toggle.svg" alt="" />
+            </div>
+    <div class="nav-links">
+        <a href="#" class="link-sm"
+        >SIGNUP <img src="asset/seigitgabawah.svg" alt=""
+        /></a>
+        <button class="btn-primary">LOGIN</button>
+    </div>
+</nav> 
+<!-- JBALVIN'S PIC-->
+
+<section class="Jbalvin">
+    <div class="column-text-heading">
+        <h1 class="Jbalvin-title">J- Balvin<img class="titik" src="asset/rectanglejbalvin.svg" alt="">
+        </h1>
+        <p class="text-p">Jose Osorio Alvaro Balvin (J Balvin) adalah seorang penyanyi 
+            dan rapper Kolombia reggaeton. Balvin lahir di Medellín, 
+            Kolombia. Pada usia 17, ia pindah ke Amerika Serikat. Dia 
+            pindah ke Oklahoma dan New York untuk belajar bahasa 
+            Inggris dan dipengaruhi oleh musik yang dia dengar di sana. 
+            Dia kemudian kembali ke Medellín dan mendapatkan 
+            popularitas tampil di klub-klub di kota. Dia adalah artis Latino 
+            pertama yang menjadi headliner Lolapalooza.
+        </p>
+        <button class="btn-secondary">M  O  R  E</button>
+        <h2 class="COPYRIGHT">INDONESIA COPYRIGHT (C) 2021 
+         </h2>
+        </div>
+        <div class="column-Jblavin-Pict">
+            <img class="bg-1" src="asset/Ellipse 1.svg" alt="">
+            <img class="overlayJbalvin" src="asset/jbalvin besar.svg" alt="">
+            <img class="pic-jbalvin" src="asset/J-Balvin-bb05-2020-feat-billboard-zpjrthjk-1548-1582752730-compressed-removebg-preview 1.svg" alt="">
+            <img class="lingkaranmerah" src="asset/lingkaran merah kecil.svg" alt="">
+
+        </div>        
+    </section>
+</body>
+</html>
