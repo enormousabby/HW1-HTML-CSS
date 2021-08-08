@@ -1,12 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no"/>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tricyclo - Media</title>
     <link rel="stylesheet" href="asset/css/style.css">
+    
 </head>
  <style>
      body{ 
@@ -44,8 +44,6 @@
             pertama yang menjadi headliner Lolapalooza.
         </p>
         <button class="btn-secondary">M  O  R  E</button>
-        <h2 class="COPYRIGHT">INDONESIA COPYRIGHT (C) 2021 
-         </h2>
         </div>
         <div class="column-Jblavin-Pict">
             <img class="bg-1" src="asset/Ellipse 1.svg" alt="">
@@ -56,4 +54,9 @@
         </div>        
     </section>
 </body>
+<div>
+    <footer>
+        <p class="Footer-bawah"> INDONESIA COPYRIGHT (c) 2021 </p>
+    </footer>
+</div>
 </html>
