@@ -26,6 +26,7 @@ a.link-sm{
     font-size: 20px;
     text-decoration: none;
     font-weight: 700;
+    left: 300px;
 
 }
 
@@ -90,6 +91,7 @@ img.overlayJbalvin{
 img.bg-1{
     top:0%;
     right: -6%;
+    scale: 50%;
 }
 .column-text-heading{
     width: 50%;
@@ -112,11 +114,16 @@ p.text-p{
     text-align: justify;
     margin-top: 10%;
 }
-h2.COPYRIGHT{
-    color: #FFFFFF;
-    font-size: 12px;
-    font-weight: 100;
-    margin: 50px auto;
 
+p.Footer-bawah{
+
+color: #FFFFFF;
+font-size: 12px;
+font-weight: 100;
+display: flex;
+justify-content: center;
 }
+
+
+
 
