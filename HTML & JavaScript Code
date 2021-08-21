@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <!--Bootstrap CSS-->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <link rel="stylesheet" href="style.css">
+  <title>Temperature Converter</title>
+</head>
+<body>
+  <h4 class="title">Convert</br> Temperature.</h4>
+  <div class="temp_calculator">
+    <form action="" name="form">
+      <div class="wrapper">
+        <div class="temp_calculator_inputs">
+          <div class="calculator_value">
+            <label for="">Value to Convert:</label>
+            <input type="text" placeholder="0" name="value" id="input_value">
+          </div>
+          <div class="container">
+          <div class="calculator_input">
+            <label for="">From:</label>
+            <select name="input" id="input">
+              <option value="Celcius">Celcius (°C)</option>
+              <option value="Fahrenheit">Fahrenheit (°F)</option>
+              <option value="Reamur">Reamur (°R)</option>
+            </select>
+          </div>
+          <div class="calculator_input">
+            <label for="">To:</label>
+            <select name="output" id="output">
+              <option value="Celcius">Celcius (°C)</option>
+              <option value="Fahrenheit">Fahrenheit (°F)</option>
+              <option value="Reamur">Reamur (°R)</option>
+            </select>
+          </div>
+        </div>
+      </div>
+      </div>
+      <div class="button">
+        <button type="button" id="clear" class="cal-btn" onclick="reset()">Clear</button>
+        <button type="button" id="convert" class="cal-btn" onclick="converTemperature()">Convert</button>
+      </div>
+      <div class="result_area">
+        <label for="">Answer:</label>
+        <input type="text" value="" id="result">
+      </div>
+      <!-- Change Background Color-->
+      "Change Background Color"
+      <input class="form-control" id="color">
+      <button type="button" class="btn btn-light" onclick="change()">Change</button>
+      </div>
+    </form>
+  </div>
+
+  <script>
+    function converTemperature(){
+      let val = document.getElementById("input_value");
+      let result = document.getElementById("result");
+      let input = document.getElementById("input");
+      let output = document.getElementById("output");
+
+
+      val.addEventListener("keyup", converTemperature);
+      input.addEventListener("change", converTemperature);
+      output.addEventListener("change", converTemperature);
+
+      let inputValue = input.value;
+      let outputValue = output.value;
+    
+
+      //Celcius
+      if(inputValue === "Celcius" && outputValue === "Fahrenheit"){
+         result.value = Number((val.value)*9/5) + 32;
+      }else if(inputValue === "Celcius" && outputValue === "Reamur") {
+          result.value = Number (val.value * 10/8);
+      }else if(inputValue === "Celcius" && outputValue === "Celcius"){
+        result.value = val.value;
+      }
+      
+      //Fahrenheit
+      if(inputValue ==="Fahrenheit" && outputValue === "Celcius"){
+        result.value = Number((val.value + 32) * 5)/9;
+      }else if(inputValue ==="Fahrenheit" && outputValue === "Reamur"){
+        result.value = Number((val.value - 32) *4 / 9);
+      }else if(inputValue ==="Fahrenheit" && outputValue === "Fahrenheit"){
+        result.value = val.value;
+      }
+
+      //Reamur
+      if(inputValue ==="Reamur" && outputValue === "Celcius"){
+        result.value = Number (val.value * 10/8);
+      }else if(inputValue ==="Reamur" && outputValue === "Fahrenheit"){
+        result.value = Number((val.value * 9/4) + 32);
+      }else if(inputValue ==="Reamur" && outputValue === "Reamur"){
+       result.value=val.value;
+      }
+    }
+
+  
+
+    function reset(){
+      converTemperature();
+    }
+
+    function change (){
+      document.body.style.bacgroundColor = 
+      document.getElementById("color").value;
+
+    }
+  </script>
+
+  
+
+  <!--JQuery First, then popper js, then bootstrap js -->
+  <script src="assets/js/jquery-3.5.1.min.js"></script>
+  <script src="assets/js/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+
+</body>
+</html>
