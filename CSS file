@@ -49,6 +49,13 @@
   
 
 }
+
+.box1{
+    background: #3E3B3A;
+    width: 60 px;
+    height: 65px;
+    margin: -14.5% 30%;
+}
 .temp_calculator{
     padding: auto auto;
     margin: 25% auto;
@@ -93,5 +100,19 @@
     margin: 10% auto;
 }
 
+.btn-light {
 
+    display: block;
+    text-decoration: none;
+    border-radius: 5px;
+    cursor: pointer;
+    outline: none;
+    text-align: -20% auto;
+    height: 30px;
+    overflow: hidden;
+    background: #C36241;
+    color: white;
+    border:none;
+    font-weight: 900;
 
+}
